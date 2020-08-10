@@ -64,7 +64,7 @@ route.put('/repositories/:id', async (request, response) => {
           item.techs=techs
          return response.json({ say: item })
         }else {
-            return response.status(400).json({ error: 'nao existe repository' })
+            return response.status(400).json({ error: 'nao existe repositorys' })
         }
     })
 })
