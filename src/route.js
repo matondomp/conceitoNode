@@ -48,7 +48,7 @@ route.post('/repositories/:id/like',async(request,response)=>{
             item.like++
             return response.json({ say: item })
         }else{
-            return response.status(400).json({ error: 'nao existe repository' })
+            return response.status(400).json({ error: 'nao existe repositorys' })
         }
     })
 
